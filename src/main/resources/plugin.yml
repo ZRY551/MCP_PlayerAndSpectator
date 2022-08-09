@@ -1,0 +1,23 @@
+name: PlayerAndSpectator
+version: '${project.version}'
+main: cn.zry551.PlayerAndSpectator.PlayerAndSpectator
+api-version: 1.18
+authors: [ YLDK ]
+description: Some Players Play Minecraft And Others Player is Spectator.
+commands:
+  playerandspectator: # 命令的基本名，请不要使用奇怪的字符！
+    aliases: # 别名，方便玩家使用
+      - "playerandspectator"
+      - "pas"
+    usage: "/pas help" # 用法
+    description: "PlayerAndSpectator Player Commands." # 描述
+#    permission: "minecraft.command.op"
+#    permission-message: "Only killer can do that!"
+  playerandspectator_admin: # 命令的基本名，请不要使用奇怪的字符！
+    aliases: # 别名，方便玩家使用
+      - "playerandspectatoradmin"
+      - "pasa"
+    usage: "/pasa help" # 用法
+    description: "PlayerAndSpectator Admin Commands." # 描述
+    permission: "minecraft.command.op"
+#    permission-message: "Only killer can do that!"

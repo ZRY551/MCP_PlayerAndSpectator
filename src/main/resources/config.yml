@@ -1,0 +1,49 @@
+
+
+Enable: true
+
+# Debug Mode , Don't set it to true
+DebugMode: false
+
+ListIsUUID: false
+#if 'Players' List is a Player UUID List, ListIsUUID = true
+#if the list is a Player Name List, ListIsUUID = false
+Players:
+  - 'admin'
+
+NoInListPlayers:
+  AutoGetNightVision: true
+  CanGetNightVision: true
+  Login_SetGameMode: true
+  Join_SetGameMode: true
+
+#if a player not in 'Players' list and do someone in 'DontAllow', be a Spectator
+DontAllowToSpectator: false
+
+DontAllow:
+  ChangeGameMode: true
+  DropItemEvent: true
+  AttemptPickupItemEvent: true
+  Death: true
+
+PlayerJoinMSG:
+  Enable: true
+  Messages:
+    Join: "&f[&6+&r&f]&r&d @USERNAME@ &r&e"
+    Quit: "&f[&b-&r&f]&r&d @USERNAME@ &r&b"
+
+Chat:
+  Enable: true
+  AllowColorChat: true
+  Format: "&7[&d@USERNAME@&r&7](&a@PLAYER_TYPE@&r&7)>&r@MESSAGE@"
+  PlayerTypes:
+    Player: "Player"
+    Spectator: "Spectator"
+
+Messages:
+  PermissionDenied: "&f[&aPAS&f] &cPermission Denied !"
+  UnknownCommand: "&f[&aPAS&f] &cUnknown Command !"
+  CommandDone: "&f[&aPAS&f] &aDone !"
+  NoInListPlayers:
+    FirstJoin: "&f[&aPAS&f] &bNow you are a Spectator !"
+    TryNotAllowedEvent: "&f[&aPAS&f] &cYou Can't Do It !"
